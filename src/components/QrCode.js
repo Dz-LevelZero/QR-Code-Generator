@@ -1,8 +1,13 @@
 import React, { useContext } from 'react'
+import { saveAs } from 'file-saver'
 import { InputContext } from '../App'
 
 const QrCode = () => {
   const { response, loading, error } = useContext(InputContext)
+  
+  const downLoadQrCode = () => {
+    saveAs(response, 'qrCode.png')
+  }
 
   if(loading) {
     return (
@@ -23,6 +28,7 @@ const QrCode = () => {
         <div>
           <img className="w-48" src={response} alt="QR Code" />
           <button
+            onClick={downLoadQrCode}
             className="bg-indigo-400 text-white mt-2 px-4 py-1 w-full"
           >Download</button>
         </div>
