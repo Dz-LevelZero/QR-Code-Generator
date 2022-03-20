@@ -16,6 +16,7 @@ function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState("");
  
+  // Get Free API KEY by Sign up on : https://www.qrcode-tiger.com/
   const config = {
     headers: { Authorization: "Bearer " + process.env.REACT_APP_API_KEY }
   }

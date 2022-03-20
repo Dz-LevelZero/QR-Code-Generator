@@ -1,3 +1,10 @@
+# QR Code Generator
+![QR Code Generator](https://i.imgur.com/IcebbQs.png)
+
+A React QR Code Generator using QR TIGER Api \
+Special Thanks To [Candra Kriswinarto](https://www.youtube.com/watch?v=z_CB9-2zzdY) YouTube Tutorials
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
